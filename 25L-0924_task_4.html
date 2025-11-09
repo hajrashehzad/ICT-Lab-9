@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 04: Journal Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #main-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 5px solid #333;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .header-box {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 25%;
+            float: left;
+            padding: 10px;
+            margin-right: 15px;
+            border: 1px solid #ccc;
+            background-color: #e9ecef;
+        }
+        
+        #content-area {
+            width: 70%;
+            float: right;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+        }
+
+        .journal-post {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px dashed #007bff;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+            border-bottom: 1px dotted #d9534f;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="main-container">
+
+        <div class="header-box">
+            <h1>My Daily Journal</h1>
+        </div>
+
+        <div class="sidebar">
+            <h2>Recent Entries</h2>
+            <ul>
+                <li><a href="#">Entry 01/01</a></li>
+                <li><a href="#">Entry 01/02</a></li>
+                <li><a href="#">Entry 01/03</a></li>
+            </ul>
+        </div>
+
+        <div id="content-area">
+            
+            <div class="journal-post">
+                <h2>First Day of Class</h2>
+                <p>
+                    Today was great. I learned about <span class="highlight">HTML structure</span> 
+                    and the basics of web design. I need to practice my <span class="highlight">CSS box model</span>.
+                </p>
+            </div>
+            
+            <div class="journal-post">
+                <h2>Learning Float Property</h2>
+                <p>
+                    I experimented with using the <span class="highlight">float: left</span> property to 
+                    create two columns for the website layout. It made the sidebar appear next to the content.
+                </p>
+            </div>
+
+        </div>
+        
+        <div style="clear: both;"></div>
+
+        <div class="header-box" style="margin-top: 20px;">
+            <footer>2025 Journal Entries</footer>
+        </div>
+
+    </div>
+
+</body>
+</html>
